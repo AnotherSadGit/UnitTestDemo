@@ -13,8 +13,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{BC1FCAF8-1CB2-4288-BC8E-293AD9146CE6}"
 	ProjectSection(SolutionItems) = preProject
 		Notes\CreatingUnitTests_README.txt = Notes\CreatingUnitTests_README.txt
+		Notes\DependencyInjection_README.txt = Notes\DependencyInjection_README.txt
 		Notes\UnitTesting.mm = Notes\UnitTesting.mm
 		Notes\UnitTesting.pptx = Notes\UnitTesting.pptx
+		Notes\UnitTesting_MockingObjects.pptx = Notes\UnitTesting_MockingObjects.pptx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_UnitTests", "Bank_UnitTests\Bank_UnitTests.csproj", "{F2AECB1E-072C-4689-9CC5-8A3263514375}"
