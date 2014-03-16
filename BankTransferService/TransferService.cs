@@ -2,7 +2,7 @@
 
 namespace BankTransferService
 {
-    public class TransferService
+    public class TransferService : BankTransferService.ITransferService
     {
         public bool SendFunds(double amount, string destinationAccountName)
         {

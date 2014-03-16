@@ -13,7 +13,7 @@ namespace Bank
     /// </summary>
     /// <remarks>Based on Walkthrough: Creating and Running Unit Tests for Managed Code, 
     /// http://msdn.microsoft.com/en-us/library/ms182532.aspx </remarks>
-    public class BankAccount
+    public class BankAccount : Bank.IBankAccount
     {
         private string m_customerName;
         private double m_balance;
