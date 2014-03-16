@@ -6,7 +6,7 @@ namespace BankTransferService
     {
         public bool SendFunds(double amount, string destinationAccountName)
         {
-            return true;
+            return false;
         }
 
         public bool ReceiveFunds(double amount, string destinationAccountName)
