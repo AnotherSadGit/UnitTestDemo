@@ -37,6 +37,11 @@ namespace Bank_UnitTests.BankAccountTests
             double comparisonPrecision = 0.001;
             Assert.AreEqual(expectedResult, actualResult, comparisonPrecision,
                 "Account balance incorrect after transfer.");
+
+            // Verify that the object under test did call the TransferService.SendFunds method 
+            //  exactly one time.
+            transferServiceMock.Verify(transferService =>
+                transferService.SendFunds(It.IsAny<double>(), It.IsAny<string>()), Times.Once());
         }
     }
 }
