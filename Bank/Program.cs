@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Configuration;
+using Microsoft.Practices.Unity;
+using Microsoft.Practices.Unity.Configuration;
+
+using BankTransferService;
+
 namespace Bank
 {
     class Program
@@ -14,7 +20,15 @@ namespace Bank
             double openingBalance = 11.99;
             Console.WriteLine("Opening balance is ${0}", openingBalance);
 
-            BankAccount ba = new BankAccount();
+            IUnityContainer diContainer = new UnityContainer();
+            diContainer.LoadConfiguration();
+
+            // Unity will recursively resolves all object references: 
+            //  IBankAccount will be resolved to a BankAccount object, 
+            //	When it tries to create a BankAccount object, Unity will see the BankAccount 
+            //      constructor takes an ITransferService argument,
+            //  ITransferService will be resolved to a TransferService object.
+            IBankAccount ba = diContainer.Resolve<IBankAccount>();
 
             ba.CustomerName = accountName;
             ba.Balance = openingBalance;

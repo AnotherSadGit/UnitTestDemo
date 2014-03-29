@@ -13,7 +13,7 @@ namespace Bank
     /// </summary>
     /// <remarks>Based on Walkthrough: Creating and Running Unit Tests for Managed Code, 
     /// http://msdn.microsoft.com/en-us/library/ms182532.aspx </remarks>
-    public class BankAccount
+    public class BankAccount : Bank.IBankAccount
     {
         private string m_customerName;
         private double m_balance;
@@ -21,10 +21,15 @@ namespace Bank
 
         public BankAccount() { }
 
+        private ITransferService _transferService;
+        public BankAccount(ITransferService transferService)
+        {
+            _transferService = transferService;
+        }
+
         public void Transfer(double amount, string destinationAccountName)
         {
-            TransferService transferService = new TransferService();
-            bool result = transferService.SendFunds(amount, destinationAccountName);
+            bool result = _transferService.SendFunds(amount, destinationAccountName);
 
             if (result == true)
             {
