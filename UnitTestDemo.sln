@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{BC1FCAF8
 	ProjectSection(SolutionItems) = preProject
 		Notes\CreatingUnitTests_README.txt = Notes\CreatingUnitTests_README.txt
 		Notes\DependencyInjection_README.txt = Notes\DependencyInjection_README.txt
+		Notes\MockingObjects_README.txt = Notes\MockingObjects_README.txt
 		Notes\UnitTesting.mm = Notes\UnitTesting.mm
 		Notes\UnitTesting.pptx = Notes\UnitTesting.pptx
 		Notes\UnitTesting_MockingObjects.pptx = Notes\UnitTesting_MockingObjects.pptx
