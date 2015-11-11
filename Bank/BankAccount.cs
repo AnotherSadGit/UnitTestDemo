@@ -51,8 +51,7 @@ namespace Bank
                     "Debit amount less than zero");
             }
 
-            // Intentional error: Should be -= not += .
-            m_balance += amount;
+            m_balance -= amount;
         }
 
         public void Credit(double amount)
