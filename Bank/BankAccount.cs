@@ -21,10 +21,15 @@ namespace Bank
 
         public BankAccount() { }
 
+        private ITransferService _transferService;
+        public BankAccount(ITransferService transferService)
+        {
+            _transferService = transferService;
+        }
+
         public void Transfer(double amount, string destinationAccountName)
         {
-            TransferService transferService = new TransferService();
-            bool result = transferService.SendFunds(amount, destinationAccountName);
+            bool result = _transferService.SendFunds(amount, destinationAccountName);
 
             if (result == true)
             {
