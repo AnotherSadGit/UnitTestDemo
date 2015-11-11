@@ -13,11 +13,72 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{BC1FCAF8-1CB2-4288-BC8E-293AD9146CE6}"
 	ProjectSection(SolutionItems) = preProject
 		Notes\CreatingUnitTests_README.txt = Notes\CreatingUnitTests_README.txt
+		Notes\DependencyInjection_README.txt = Notes\DependencyInjection_README.txt
 		Notes\UnitTesting.mm = Notes\UnitTesting.mm
 		Notes\UnitTesting.pptx = Notes\UnitTesting.pptx
+		Notes\UnitTesting_MockingObjects.pptx = Notes\UnitTesting_MockingObjects.pptx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank_UnitTests", "Bank_UnitTests\Bank_UnitTests.csproj", "{F2AECB1E-072C-4689-9CC5-8A3263514375}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImagesForSlides", "ImagesForSlides", "{47100B55-3DB0-41D6-9CEA-AB431ED0BD82}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\ImagesForSlides\Dependencies_1.png = Notes\ImagesForSlides\Dependencies_1.png
+		Notes\ImagesForSlides\Dependencies_1.vsd = Notes\ImagesForSlides\Dependencies_1.vsd
+		Notes\ImagesForSlides\Dependencies_2.png = Notes\ImagesForSlides\Dependencies_2.png
+		Notes\ImagesForSlides\Dependencies_2.vsd = Notes\ImagesForSlides\Dependencies_2.vsd
+		Notes\ImagesForSlides\Dependencies_3.png = Notes\ImagesForSlides\Dependencies_3.png
+		Notes\ImagesForSlides\Dependencies_3.vsd = Notes\ImagesForSlides\Dependencies_3.vsd
+		Notes\ImagesForSlides\DependencyInjection_1.png = Notes\ImagesForSlides\DependencyInjection_1.png
+		Notes\ImagesForSlides\DependencyInjection_1.vsd = Notes\ImagesForSlides\DependencyInjection_1.vsd
+		Notes\ImagesForSlides\DependencyInjection_2.png = Notes\ImagesForSlides\DependencyInjection_2.png
+		Notes\ImagesForSlides\DependencyInjection_2.vsd = Notes\ImagesForSlides\DependencyInjection_2.vsd
+		Notes\ImagesForSlides\DependencyInjection_3.png = Notes\ImagesForSlides\DependencyInjection_3.png
+		Notes\ImagesForSlides\DependencyInjection_3.vsd = Notes\ImagesForSlides\DependencyInjection_3.vsd
+		Notes\ImagesForSlides\DependencyInjection_4.png = Notes\ImagesForSlides\DependencyInjection_4.png
+		Notes\ImagesForSlides\DependencyInjection_4.vsd = Notes\ImagesForSlides\DependencyInjection_4.vsd
+		Notes\ImagesForSlides\DependencyInjection_5.png = Notes\ImagesForSlides\DependencyInjection_5.png
+		Notes\ImagesForSlides\DependencyInjection_5.vsd = Notes\ImagesForSlides\DependencyInjection_5.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Final.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Final.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Final.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Final.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Initial.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Initial.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Initial.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Initial.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_1.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_1.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_1.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_1.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_2_5.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_2_5.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_2_5.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_2_5.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_3.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_3.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_3.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_3.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_4.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_4.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_4.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_4.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_6.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_6.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_6.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_6.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_7.png = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_7.png
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_7.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_7.vsd
+		Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_BaseImage.vsd = Notes\ImagesForSlides\DependencyInjection_WorkedExample_Take2_BaseImage.vsd
+		Notes\ImagesForSlides\ExampleApplicationStructure_0.png = Notes\ImagesForSlides\ExampleApplicationStructure_0.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_0.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_0.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_1.png = Notes\ImagesForSlides\ExampleApplicationStructure_1.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_1.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_1.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_2.png = Notes\ImagesForSlides\ExampleApplicationStructure_2.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_2.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_2.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_2_0.png = Notes\ImagesForSlides\ExampleApplicationStructure_2_0.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_2_0.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_2_0.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_2_1.png = Notes\ImagesForSlides\ExampleApplicationStructure_2_1.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_2_1.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_2_1.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_3.png = Notes\ImagesForSlides\ExampleApplicationStructure_3.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_3.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_3.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_4.png = Notes\ImagesForSlides\ExampleApplicationStructure_4.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_4.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_4.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_4_2.png = Notes\ImagesForSlides\ExampleApplicationStructure_4_2.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_4_2.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_4_2.vsdx
+		Notes\ImagesForSlides\ExampleApplicationStructure_5.png = Notes\ImagesForSlides\ExampleApplicationStructure_5.png
+		Notes\ImagesForSlides\ExampleApplicationStructure_5.vsdx = Notes\ImagesForSlides\ExampleApplicationStructure_5.vsdx
+		Notes\ImagesForSlides\SwappingDependencies_1.png = Notes\ImagesForSlides\SwappingDependencies_1.png
+		Notes\ImagesForSlides\SwappingDependencies_1.vsd = Notes\ImagesForSlides\SwappingDependencies_1.vsd
+		Notes\ImagesForSlides\SwappingDependencies_2.png = Notes\ImagesForSlides\SwappingDependencies_2.png
+		Notes\ImagesForSlides\SwappingDependencies_2.vsd = Notes\ImagesForSlides\SwappingDependencies_2.vsd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,5 +101,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47100B55-3DB0-41D6-9CEA-AB431ED0BD82} = {BC1FCAF8-1CB2-4288-BC8E-293AD9146CE6}
 	EndGlobalSection
 EndGlobal
