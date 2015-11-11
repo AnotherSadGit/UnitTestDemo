@@ -8,23 +8,30 @@ namespace Bank_UnitTests.BankAccountTests
     [TestClass]
     public class BankAccount_Debit
     {
-        [TestMethod]
-        public void Should_DecrementBalance_Given_ValidAmount()
+        BankAccount _objectUnderTest;
+
+        [TestInitialize]
+        public void TestSetup()
         {
-            // Arrange.
-            BankAccount account = new BankAccount()
+            _objectUnderTest = new BankAccount()
                 {
                     CustomerName = "Mr. John Smith",
                     Balance = 12.00
                 };
+        }
+
+        [TestMethod]
+        public void Should_DecrementBalance_Given_ValidAmount()
+        {
+            // Arrange.
             double debitAmount = 4.50;
 
             // Act.
-            account.Debit(debitAmount);
+            _objectUnderTest.Debit(debitAmount);
 
             // Assert.
             double expectedResult = 7.50;  
-            double actualResult = account.Balance;
+            double actualResult = _objectUnderTest.Balance;
             double comparisonPrecision = 0.001;
             Assert.AreEqual(expectedResult, actualResult, comparisonPrecision,
                 "Account balance incorrect after debit.");
@@ -34,19 +41,14 @@ namespace Bank_UnitTests.BankAccountTests
         public void Should_ThrowArgumentOutOfRangeException_If_AmountNegative()
         {
             // Arrange.
-            double initialBalance = 12.00;
-            BankAccount account = new BankAccount()
-            {
-                CustomerName = "Mr. John Smith",
-                Balance = initialBalance
-            };
+            double initialBalance = _objectUnderTest.Balance;
             double debitAmount = -3.00;
 
             // Act.
             Exception exceptionThrown = null;
             try
             {
-                account.Debit(debitAmount);
+                _objectUnderTest.Debit(debitAmount);
             }
             catch (Exception ex)
             {
@@ -55,7 +57,7 @@ namespace Bank_UnitTests.BankAccountTests
 
             // Assert.
             double expectedResult = initialBalance;  
-            double actualResult = account.Balance;
+            double actualResult = _objectUnderTest.Balance;
             double comparisonPrecision = 0.001;
             Assert.AreEqual(expectedResult, actualResult, comparisonPrecision,
                 "Account balance should not have changed when debit amount was negative.");
